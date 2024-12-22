@@ -1,20 +1,22 @@
-import { Controller, Post, Get, Body } from '@nestjs/common';
+import { Controller, Post, Body, Param } from '@nestjs/common';
 import { QuizService } from './quiz.service';
-import { Quiz } from 'src/schemas/quiz.schema';
+import { CreateQuizDto } from './dto/create-quiz.dto';
+import { JoinQuizDto } from './dto/join-quiz.dto';
 
 @Controller('quiz')
 export class QuizController {
   constructor(private readonly quizService: QuizService) {}
 
   @Post()
-  async createQuiz(@Body() quiz: Quiz) {
-    return this.quizService.createQuiz(quiz);
+  async createQuiz(@Body() createQuizDto: CreateQuizDto) {
+    return this.quizService.createQuiz(createQuizDto);
   }
 
-  @Get()
-  async getQuizzes() {
-    return this.quizService.getQuizzes();
+  @Post(':quizId/join')
+  async joinQuiz(
+    @Param('quizId') quizId: string,
+    @Body() joinQuizDto: JoinQuizDto,
+  ) {
+    return this.quizService.joinQuiz(quizId, joinQuizDto);
   }
-
-  // Add more endpoints as needed
 }
