@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the capital of England?",
+      "options": ["London", "Paris", "Berlin", "Madrid"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which of the following is a synonym for 'happy'?",
+      "options": ["Sad", "Joyful", "Angry", "Tired"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the past tense of 'eat'?",
+      "options": ["Eats", "Ate", "Eating", "Eaten"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which word is a noun?",
+      "options": ["Run", "Quickly", "Happiness", "Beautiful"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the opposite of 'hot'?",
+      "options": ["Warm", "Cold", "Cool", "Tepid"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which of the following is a correct sentence?",
+      "options": [
+        "She go to school.",
+        "She goes to school.",
+        "She going to school.",
+        "She gone to school."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the plural form of 'child'?",
+      "options": ["Childs", "Childrens", "Children", "Childes"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which of these animals is a mammal?",
+      "options": ["Shark", "Dolphin", "Crocodile", "Eagle"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is 5 + 7?",
+      "options": ["10", "11", "12", "13"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which country is known as the 'Land of the Rising Sun'?",
+      "options": ["China", "Japan", "South Korea", "Thailand"],
+      "correctAnswer": 1
+    }
+  ]
+}
